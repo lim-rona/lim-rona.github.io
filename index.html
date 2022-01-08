@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lim Rona's portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4303692a50.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="sidebar" style="width:200px; right:0" id="mySidebar"> 
+                    <button class="closeAndOpen" onlick="my_close()">Close &times;</button>
+                    <a href="#aboutMe" class="sidebar">About Me</a>
+                    <a href="" class="sidebar">Projects</a>
+                    <a href="" class="sidebar">Blog/Things to share</a>
+                    <a href="" class="sidebar">Contact Me</a>
+                    <a href="" class="sidebar">Resume</a>
+                </div>
+                <div>
+                    <button class="open" onclick="my_open()">&#9776;</button>
+                </div>
+            </nav>
+        </header>  
+        
+        <main>
+            <section id="mainPage">
+                <div class="mainPage-inner">
+                    <h1>Hi, I'm Lim Rona.</h1>
+                    <p class="mainPagePara">I'm an aspiring software developer and an economics major with a side passion for music.</p>
+                </div>
+            </section>
+
+            <section id="aboutMe">
+                <div class="section-inner">
+                    <h2>1. About me</h2>
+                    <p>Hey there, I'm Lim Rona. I recently graduated from NUS with a Bachelors in Economics(2021) and I'm currently exploring different job fields and looking for new opportunities especially in the tech domain! I'm currently learning: Java (Insert description of self and include
+                        socials and work and education history,achievements, maybe can make a section specifically for tech? Expanding my skills into tech?)</p>
+                        <i href="www.linkedin.com/in/lim-rona" class="fa-brands fa-linkedin"></i>
+                        <i href="https://github.com/t3olette" class="fa-brands fa-github"></i>
+                        <i href="" class="fa-brands fa-instagram-square"></i>
+                        <i href="" class="fab fa-facebook-square"></i>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="mainPage-inner">
+                    <h1>2. Projects</h1>
+                    <p>- To put future projects here</p>
+                </div>
+            </section>
+
+            <section id="blog">
+                <div class="mainPage-inner">
+                    <h1>3. Blog/Things to Share</h1>
+                    <p>maybe can link to another page with your writings</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="mainPage-inner">
+                    <h1>4. Contact Me</h1>
+                    <p>Let me know your thoughts!</p>
+                    <form action="/contactme.php" method="POST">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Your name" required><br>
+
+                        <label for="name">Last name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your last name" required><br>
+
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="30">Your message here!</textarea>
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+                    
+                </div>
+            </section>
+
+            <section id="resume">
+                <div class="mainPage-inner">
+                    <h1><a href="E:\Werkwerkwerkwerkwerk\Website-Making\Portfolio-Website\Lim-Rona-Sample-Resume.pdf" target="_blank">Resume</a></h1>
+                </div>
+            </section>
+
+        </main>
+
+        <script>
+            function w3_open(){
+                document.getElementById("sidebar").style.display="block";
+            }
+            function w3_close(){
+                document.getElementById("sidebar").style.display="none";
+            }
+        </script>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
