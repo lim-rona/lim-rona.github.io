@@ -187,3 +187,7 @@ form{
 .logo-details a:visited{
     color:#fff;
 }
+
+.logo-details a:link{
+  color:#fff;
+}
