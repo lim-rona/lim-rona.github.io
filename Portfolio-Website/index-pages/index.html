@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lim Rona's portfolio website</title>
+        <link rel="stylesheet" href="../styles/style.css">
+       
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="sidebar"  id= "mySidebar"> 
+                    <div class="logo-details">
+                        <!--<i class='bx bx-happy-beaming'></i>-->
+                            <a class="ronaPage" href="#mainPage"><div class="logo_name">Rona's Page</div></a>
+                            <i class='bx bx-menu' id="btn"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#aboutMe" ><i class='bx bx-user-pin' ></i><span class="links_name">About Me</span></a></li>
+                        <li><a href="#projects" ><i class='bx bx-code-alt' ></i><span class="links_name">Projects</span></a></li>
+                        <li><a href="#blog" ><i class='bx bx-notepad' ></i><span class="links_name">Blog/Things to share</span></a></li>
+                        <li><a href="#contact" ><i class='bx bx-message-dots' ></i><span class="links_name">Contact Me</span></a></li>
+                        <li><a href="#resume" ><i class='bx bx-file'></i><span class="links_name">View my Resume</span></a></li>
+                    </ul>
+                </div>
+    
+            </nav>
+        </header>  
+        
+        <main>
+            <section id="mainPage">
+                <div class="mainPage-inner">
+                    <h1>Hi, I'm Lim Rona.</h1>
+                    <p class="mainPagePara">I'm an aspiring software developer and an economics major with a side passion for music.</p>
+                </div>
+            </section>
+
+            <section id="aboutMe">
+                <div class="section-inner">
+                    <h2>1. About me</h2>
+                    <p class="section-inner-para">Hey there, I'm Lim Rona. I recently graduated from NUS with a Bachelors in Economics(2021) and I'm currently exploring different job fields and looking for new opportunities especially in the tech domain! I started my journey in December 2021 with an Introduction to HTML&CSS and I'm currently learning: <mark>Javascript</mark>.
+                        This is a simple website I built from scratch using basic HTML, CSS and minimal Javascript. I will be updating it once I've learnt more libraries such as React - I can't wait to see what the future holds! :-)  </p>
+                        <a href="https://linkedin.com/in/lim-rona" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/t3olette" target="_blank"><i class='bx bxl-github' ></i></a>
+                        <i class='bx bxl-facebook-circle' ></i>
+                        <i class='bx bxl-instagram' ></i>
+        
+                    
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="section-inner">
+                    <h2>2. Projects</h2>
+                    <p class="section-inner-para">-Future projects goes here</p>
+                </div>
+            </section>
+
+            <section id="blog">
+                <div class="section-inner">
+                    <h2>3. Blog/Things to Share</h2>
+                    <p class="section-inner-para">-Future writings goes here</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="section-inner">
+                    <h2>4. Contact Me</h2>
+                    <!--<p>Let me know your thoughts!</p>-->
+                    <p class="contactNotAvail">(This contact box will be unavaiable for now as Github Pages only serves static content, <span class="sorry">sorry!</span>) </p>
+                    <form action="/contactme.php" method="POST">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Your name" required><br>
+
+                        <label for="name">Last name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your last name" required><br>
+
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="30">Your message here!</textarea>
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+
+                    
+                    
+                </div>
+            </section>
+
+            <section id="resume">
+                <div class="section-inner">
+                    <h4>View my resume <a href="E:\Werkwerkwerkwerkwerk\Website-Making\Portfolio-Website\Lim-Rona-Sample-Resume.pdf" target="_blank">here</a>!</h4>
+                </div>
+            </section>
+
+        </main>
+
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+
+            btn.onclick = function(){
+                sidebar.classList.toggle("open");
+            }
+            
+        </script>
+
+       
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
